@@ -1,0 +1,17 @@
+@import '~normalize.css';
+@import 'reset-css';
+@import '/src/styles/variables/index';
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}

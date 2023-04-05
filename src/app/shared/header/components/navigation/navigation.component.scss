@@ -1,0 +1,34 @@
+@import 'src/styles/variables/index';
+
+.nav {       
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 65px;
+    &__links {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__logo {
+        font: $regular-xl-font;
+        margin-right: 100px;
+    }
+    &__sections {
+        display: flex;
+    }
+    &__section {
+        font: $regular-m-font;
+        & + & {
+            margin-left: 100px;
+        }
+    }
+    &__personal {
+        display: flex;
+    }
+    &__profile {
+    }
+    &__basket {
+        margin-left: 80px;
+    }
+}
