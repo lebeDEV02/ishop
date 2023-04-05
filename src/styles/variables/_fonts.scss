@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/src/assets/fonts/inter-semi-bold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('/src/assets/fonts/inter-regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+$regular-s-font: 400 24px 'Inter';
+$regular-m-font: 400 28px 'Inter';
+$semi-bold-s-font: 600 28px 'Inter';  
+$regular-l-font: 400 40px 'Inter';  
+$semi-bold-m-font: 600 48px 'Inter';  
+$regular-xl-font: 400 48px 'Inter';   

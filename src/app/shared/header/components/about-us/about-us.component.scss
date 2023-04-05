@@ -1,0 +1,30 @@
+@import 'src/styles/variables/index';
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px 0;
+    border-bottom: 1px solid $black;
+    &__info {
+        color: $black;
+        font: $regular-s-font;
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+    &__icons {
+        display: flex;
+    }
+    &__icon {
+        & + & {
+            margin-left: 65px;
+        }
+    }
+    &__phone-number {
+        text-decoration: none;
+        margin-left: 65px;
+        font: $regular-s-font;
+    }
+}
