@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { AboutUsComponent } from './header/components/about-us/about-us.component';
 import { NavigationComponent } from './header/components/navigation/navigation.component';
+import { FooterComponent } from './footer/footer.component';
+import { StakeholderAboutComponent } from './footer/components/stakeholder-about/stakeholder-about.component';
+import { FooterNavigationComponent } from './footer/components/footer-navigation/footer-navigation.component';
 
 
 
@@ -10,13 +13,17 @@ import { NavigationComponent } from './header/components/navigation/navigation.c
   declarations: [
     HeaderComponent,
     AboutUsComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent,
+    StakeholderAboutComponent,
+    FooterNavigationComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

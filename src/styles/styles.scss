@@ -1,6 +1,11 @@
 @import '~normalize.css';
 @import 'reset-css';
 @import '/src/styles/variables/index';
+
+html, body {
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: $black;
