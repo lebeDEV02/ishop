@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    height: 100%;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+.body {
+    flex: 1 0 auto;
+}

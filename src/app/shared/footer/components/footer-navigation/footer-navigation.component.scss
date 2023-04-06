@@ -1,0 +1,49 @@
+@import 'src/styles/variables/index';
+
+.footer-navigation {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $white;
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font: $regular-m-font;
+        margin-bottom: 30px;
+    }
+
+    &__sections {}
+
+    &__section {
+        color: $grey;
+        font: $regular-s-font;
+        & + & {
+            margin-top: 22px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__phone-number {
+        color: $white;
+        font: $regular-s-font;
+        margin-bottom: 40px;
+    }
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon {
+        & + & {
+            margin-left: 52px;
+        }
+    }
+}

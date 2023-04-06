@@ -1,0 +1,14 @@
+@import 'src/styles/variables/index';
+
+.stakeholder-about {
+    padding-top: 40px;
+    &__team{
+        color: $white;
+        margin-bottom: 26px;
+        font: $regular-s-font;
+    }
+    &__team-description{
+        color: $grey;
+        font: $regular-s-font;
+    }
+}
