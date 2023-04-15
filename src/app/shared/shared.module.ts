@@ -6,6 +6,7 @@ import { NavigationComponent } from './header/components/navigation/navigation.c
 import { FooterComponent } from './footer/footer.component';
 import { StakeholderAboutComponent } from './footer/components/stakeholder-about/stakeholder-about.component';
 import { FooterNavigationComponent } from './footer/components/footer-navigation/footer-navigation.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -19,7 +20,8 @@ import { FooterNavigationComponent } from './footer/components/footer-navigation
     FooterNavigationComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,

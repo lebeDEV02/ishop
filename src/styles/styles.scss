@@ -2,8 +2,9 @@
 @import 'reset-css';
 @import '/src/styles/variables/index';
 
-html, body {
+html, body, .body {
     height: 100%;
+    box-sizing: border-box;
 }
 
 a {
@@ -11,9 +12,14 @@ a {
     color: $black;
 }
 
+input, button {
+    box-sizing: border-box;
+}
+
 button {
     border: none;
     background-color: transparent;
+    display: block;
 }
 
 body {
