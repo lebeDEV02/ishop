@@ -1,0 +1,73 @@
+@import 'src/styles/variables/index';
+
+:host {
+    display: block;
+    height: inherit;
+}
+
+.login-form {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 494px;
+    margin: 0 auto;
+    &__title {
+        font: $regular-xl-font;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    &__email, &__name, &__password, &__password-repeat, &__submit {
+        &::placeholder {
+            font: $regular-m-font;
+            color: $black;
+        }
+    }
+    &__email, &__name, &__password, &__password-repeat {
+        @include user-input;
+        display: block;
+        margin-bottom: 55px;
+        padding: 20px 30px;
+    }
+    &__forgot-password {
+        color: $red;
+        font: $regular-m-font;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    &__submit {
+        @include accent-button;
+        padding: 24px 100px;
+        margin-bottom: 44px;
+    }
+    &__register {       font: $regular-m-font;
+        color: $red;
+        cursor: pointer;
+
+    }
+}
+
+
+
+
+.register-form {
+    &__name {}
+
+    &__password {}
+
+    &__password-repeat {
+        margin-bottom: 40px;
+    }
+
+    &__submit {
+        @include accent-button;
+        padding: 24px 100px;
+        margin-bottom: 44px;
+    }
+
+    &__login {
+        font: $regular-m-font;
+        color: $red;
+        cursor: pointer;
+    }
+}

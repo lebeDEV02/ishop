@@ -1,0 +1,16 @@
+@import 'colors';
+@import 'fonts';
+
+@mixin accent-button {
+    background-color: $red;
+    color: $white;
+    border-radius: 10px;
+    font: $regular-m-font;
+    cursor: pointer;
+}
+
+@mixin user-input {
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 10px;
+}
