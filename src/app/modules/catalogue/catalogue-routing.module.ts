@@ -5,6 +5,7 @@ import { MacComponent } from './components/mac/mac.component';
 import { AirpodsComponent } from './components/airpods/airpods.component';
 import { IpadComponent } from './components/ipad/ipad.component';
 import { WatchComponent } from './components/watch/watch.component';
+import { SelectedItemComponent } from 'app/shared/components/selected-item/selected-item.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'watch',
     component: WatchComponent,
+  },
+  {
+    path: ':product/:id',
+    component: SelectedItemComponent,
   },
 ];
 

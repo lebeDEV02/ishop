@@ -1,0 +1,9 @@
+<p>selected-item works!</p>
+<img [src]="selectedItem.img">
+<h1>{{selectedItem.title}}</h1>
+<span>{{selectedItem.in_stock}}</span>
+<span>{{selectedItem.price}}</span>
+<ng-container *ngFor="let section of selectedItem.sections">
+    <p>{{section | json}}</p>
+    <p>{{section.title}}</p>
+</ng-container>

@@ -1,7 +1,7 @@
-<div class="item-card">
-    <ishop-favourite-item class="item-card__favourite"></ishop-favourite-item>
+<div class="item-card" (click)="onItemCardClick($event)">
+    <ishop-favourite-item class="item-card__favourite" (click)="preventPropogation($event)"></ishop-favourite-item>
     <img class="item-card__image" src="https://placehold.co/220x320">
     <p class="item-card__title">{{itemCardTitle}}</p>
     <p class="item-card__price">{{itemCardPrice | currency: 'RUB':'symbol-narrow'}}</p>
-    <ishop-to-cart></ishop-to-cart>
+    <ishop-to-cart (click)="preventPropogation($event)"></ishop-to-cart>
 </div>

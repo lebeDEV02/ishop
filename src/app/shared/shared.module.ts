@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/header/navigation/navigation.component';
 import { FavouriteItemButtonComponent } from './components/item-cards/item-card/buttons/favourite-item/favourite-item.component';
 import { ToCartComponent } from './components/item-cards/item-card/buttons/to-cart/to-cart.component';
+import { SelectedItemComponent } from './components/selected-item/selected-item.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ToCartComponent } from './components/item-cards/item-card/buttons/to-ca
     ItemCardsComponent,
     FavouriteItemButtonComponent,
     ToCartComponent,
+    SelectedItemComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -31,6 +33,7 @@ import { ToCartComponent } from './components/item-cards/item-card/buttons/to-ca
     FooterComponent,
     ItemCardComponent,
     ItemCardsComponent,
+    SelectedItemComponent,
   ],
 })
 export class SharedModule {}
