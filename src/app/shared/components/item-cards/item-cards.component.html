@@ -1,0 +1,6 @@
+<div class="item-cards">
+<h3 class="item-cards__title">{{itemCardsTitle}}</h3>
+<div class="item-cards__items">
+    <ishop-item-card *ngFor="let itemCard of itemCards" [itemCardTitle]="itemCard.title" [itemCardPrice]="itemCard.price"></ishop-item-card>
+</div>
+</div>

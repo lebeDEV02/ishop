@@ -1,0 +1,14 @@
+@import 'src/styles/variables/index';
+
+.home {
+    margin: 75px 65px 0;
+
+    &__title {
+        font: $regular-xl-font;
+        margin-bottom: 50px;
+    }
+
+    &__description {
+        font: $regular-s-font;
+    }
+}

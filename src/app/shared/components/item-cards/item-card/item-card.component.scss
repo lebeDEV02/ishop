@@ -1,0 +1,44 @@
+@import 'src/styles/variables/index';
+
+:host {
+    width: 398px;
+    display: block;
+}
+
+.item-card {
+    width: inherit;
+    text-align: center;
+    border: 1px solid $black;
+    border-radius: 10px;
+    padding: 22px;
+    position: relative;
+    transition: border-color .1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        border-color: $red;
+        .item-card__favourite {
+            visibility: visible;
+        }
+    }
+    &__image {
+        margin-bottom: 30px;
+    }
+    &__title {
+        font: $regular-s-font;
+        margin-bottom: 30px;
+    }
+    &__price {
+        font: $semi-bold-s-font;
+        margin-bottom: 30px;
+    }
+    &__button {
+        @include accent-button;
+        padding: 8px 60px;
+        margin: 0 auto;
+    }
+    &__favourite {
+        visibility: hidden; 
+    }
+    &__favourite-icon {
+    }
+}

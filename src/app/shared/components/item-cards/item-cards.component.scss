@@ -1,0 +1,18 @@
+
+@import 'src/styles/variables/index';
+
+.item-cards{
+    margin: 0 65px;
+    &__title {
+        margin: 74px 0;
+        font: $regular-xl-font;
+    }
+    &__items {
+        max-width: 1800px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px 64px;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+}
