@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { IdentityModule } from './modules/identity/identity.module';
+import { CatalogueModule } from './modules/catalogue/catalogue.module';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +17,8 @@ import { IdentityModule } from './modules/identity/identity.module';
     SharedModule,
     RouterModule,
     IdentityModule,
+    CatalogueModule,
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

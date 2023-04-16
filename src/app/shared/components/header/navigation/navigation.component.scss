@@ -6,21 +6,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 32px 65px;
+    border-bottom: 1px solid $black;
     &__links {
         display: flex;
-        align-items: flex-end;
     }
     &__logo {
         font: $regular-xl-font;
         margin-right: 100px;
+        cursor: pointer;
     }
     &__sections {
         display: flex;
     }
     &__section {
         font: $regular-m-font;
+        cursor: pointer;
+        padding: 16px 36px;
+        border: 1px solid transparent;
         & + & {
-            margin-left: 100px;
+            margin-left: 38px;
+        }
+        &_active {
+            color: red;
+            border-color: $black;
+            border-radius: 15px;
         }
     }
     &__personal {
