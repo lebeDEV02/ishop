@@ -1,0 +1,5 @@
+<div class="amount-selector">
+    <button class="amount-selector__decrease-button" (click)="handleDecrease()">-</button>
+    <input type="number" class="amount-selector__value" value="0" [(ngModel)]="value" onkeydown="return false"/>
+    <button class="amount-selector__increase-button" (click)="handleIncrease()">+</button>
+</div>

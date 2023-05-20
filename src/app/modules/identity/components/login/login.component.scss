@@ -51,9 +51,13 @@
 
 
 .register-form {
-    &__name {}
+    &__name {
+        
+    }
 
-    &__password {}
+    &__password {
+        
+    }
 
     &__password-repeat {
         margin-bottom: 40px;

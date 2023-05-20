@@ -1,0 +1,123 @@
+.order-placement {
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+    color: #000000;
+    margin-bottom: 60px;
+  }
+  &__address-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+  }
+
+  &__user {
+    margin-bottom: 70px;
+  }
+
+  &__receiver {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+
+  &__username {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    display: flex;
+  }
+
+  &__edit-username {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  &__address-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  &__full-address {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+    color: #8d8d92;
+    margin-bottom: 60px;
+  }
+}
+
+.form-controls {
+  max-width: 980px;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #8d8d92;
+
+    span {
+      margin-bottom: 10px;
+    }
+  }
+
+  input {
+    height: 76px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  &__postcode {
+    width: 160px;
+  }
+
+  &__region {
+    width: 314px;
+  }
+
+  &__city {
+    width: 385px;
+  }
+
+  &__street {
+    width: 342px;
+  }
+
+  &__building {
+    width: 182px;
+  }
+
+  &__hull {
+    width: 182px;
+  }
+
+  &__entrance {
+    width: 182px;
+  }
+
+  &__floor {
+    width: 182px;
+  }
+
+  &__apartment {
+    width: 182px;
+  }
+}

@@ -12,6 +12,8 @@ import { NavigationComponent } from './components/header/navigation/navigation.c
 import { FavouriteItemButtonComponent } from './components/item-cards/item-card/buttons/favourite-item/favourite-item.component';
 import { ToCartComponent } from './components/item-cards/item-card/buttons/to-cart/to-cart.component';
 import { SelectedItemComponent } from './components/selected-item/selected-item.component';
+import { AmountSelectorComponent } from './components/amount-selector/amount-selector.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { SelectedItemComponent } from './components/selected-item/selected-item.
     FavouriteItemButtonComponent,
     ToCartComponent,
     SelectedItemComponent,
+    AmountSelectorComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FormsModule],
   exports: [
     HeaderComponent,
     FooterComponent,
     ItemCardComponent,
     ItemCardsComponent,
     SelectedItemComponent,
+    AmountSelectorComponent
   ],
 })
 export class SharedModule {}

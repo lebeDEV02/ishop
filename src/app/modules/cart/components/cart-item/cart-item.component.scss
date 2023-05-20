@@ -1,0 +1,30 @@
+@import 'src/styles/variables/index';
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+    &__about {
+        margin-left: 75px;
+    }
+    &__title {
+        font: $regular-m-font;
+        margin-bottom: 24px;
+    }
+    &__price {
+        margin-left: 56px;
+        font: $regular-s-font;
+    }
+    &__options {
+        align-items: center;
+        display: flex;
+    }
+    &__remove {
+        margin-left: 46px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,88 @@
+<div class="order-placement">
+  <h3 class="order-placement__title">Оформление заказа</h3>
+  <div class="order-placement__content">
+    <ng-container *ngIf="!isFormVisible">
+      <div class="order-placement__user">
+        <h6 class="order-placement__receiver">Получатель:</h6>
+        <div class="order-placement__username">
+          <p>Константинопольский Константин Константинович</p>
+          <button
+            class="order-placement__edit-username"
+            (click)="changeFormVisibility()"
+          >
+            <img src="/assets/icons/edit.svg" />
+          </button>
+        </div>
+      </div>
+      <h6 class="order-placement__address-title">Адрес доставки:</h6>
+      <p class="order-placement__full-address">
+        {{ fullAddress | json }}
+      </p>
+    </ng-container>
+    <ng-container *ngIf="isFormVisible">
+      <div class="order-placement__user">
+        <h6 class="order-placement__receiver">Получатель:</h6>
+        <div class="order-placement__username">
+          <p>Константинопольский Константин Константинович</p>
+          <button
+            class="order-placement__edit-username"
+            (click)="changeFormVisibility()"
+          >
+            <img src="/assets/icons/edit.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="order-placement__shipment-address">
+        <h6 class="order-placement__address-title">Адрес доставки:</h6>
+        <ng-container *ngIf="fullAddress; else addAddress">
+          <p class="order-placement__full-address">
+            {{ fullAddress | json }}
+          </p>
+        </ng-container>
+        <ng-template #addAddress> Укажите адрес доставки </ng-template>
+        <form
+          class="order-placement__address-form form-controls"
+          [formGroup]="addressForm"
+          *ngIf="isFormVisible"
+        >
+          <label class="form-controls__control form-controls__postcode">
+            <span>Индекс</span>
+            <input formControlName="postcode" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__region">
+            <span>Область</span>
+            <input formControlName="region" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__city">
+            <span>Город</span>
+            <input formControlName="city" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__street">
+            <span>Улица</span>
+            <input formControlName="street" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__building">
+            <span>Дом</span>
+            <input formControlName="building" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__hull">
+            <span>Корпус</span>
+            <input formControlName="hull" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__entrance">
+            <span>Подъезд</span>
+            <input formControlName="entrance" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__floor">
+            <span>Этаж</span>
+            <input formControlName="floor" type="text" />
+          </label>
+          <label class="form-controls__control form-controls__apartment">
+            <span>Квартира</span>
+            <input formControlName="apartment" type="text" />
+          </label>
+        </form>
+      </div>
+    </ng-container>
+  </div>
+</div>

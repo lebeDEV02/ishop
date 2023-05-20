@@ -1,0 +1,13 @@
+<div class="cart">
+    <h3 class="cart__title">Корзина</h3>
+    <div class="cart__content">
+        <ul class="cart__items">
+            <ishop-cart-item class="cart__item" *ngFor="let cartItem of cartItems"></ishop-cart-item>
+        </ul>
+        <div class="cart__order-summary">
+            <p class="cart__order-title">Заказ на сумму</p>
+            <span class="cart__order-sum">233 777 ₽ </span>
+            <button class="cart__proceed-button">Перейти к оформлению</button>
+        </div>
+    </div>
+</div>
